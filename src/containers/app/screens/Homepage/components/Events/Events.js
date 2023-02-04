@@ -39,7 +39,7 @@ function Events({ name }) {
                     <a
                         ref={bridgeMap}
                         style={{ display: 'none' }}
-                        href="https://maps.app.goo.gl/fALFcM9eobMNHVTZ8"
+                        href="https://goo.gl/maps/BKvtV9gxf1zYbtVm7"
                         target={'_blank'}
                     ></a>
                     <div
@@ -74,7 +74,7 @@ function Events({ name }) {
                     <a
                         ref={groomMap}
                         style={{ display: 'none' }}
-                        href="https://maps.app.goo.gl/Swt1sH19qkaSPNMg8"
+                        href="https://goo.gl/maps/2i3sGbaCjX65KhRz6"
                         target={'_blank'}
                     ></a>
                     <div
