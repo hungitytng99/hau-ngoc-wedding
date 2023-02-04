@@ -30,7 +30,7 @@ function Events({ name }) {
                         '--delay': '0s',
                     }}
                 >
-                    <div className="events__content-item-title">Lễ cưới nhà gái</div>
+                    <div className="events__content-item-title">Tiệc cưới nhà gái</div>
                     <div className="events__content-item-box">
                         <img className="events__content-item-img" src={DSC_0969_min} alt="" />
                     </div>
@@ -63,7 +63,7 @@ function Events({ name }) {
                         '--delay': '0s',
                     }}
                 >
-                    <div className="events__content-item-title">Lễ cưới nhà trai</div>
+                    <div className="events__content-item-title">Tiệc cưới nhà trai</div>
                     <div className="events__content-item-box">
                         <img className="events__content-item-img" src={DSC_0976_min} alt="" />
                     </div>
