@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import DSC_0557_min from '~/assets/images/wedding/DSC_0557-min.jpg';
-import DSC_0706_min from '~/assets/images/wedding/DSC_0706-min.jpg';
-import HeartIcon from '~/assets/images/header/heart.png';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import './Banner.sass';
+import image_main_1 from '~/assets/images/wedding/image-main-1.jpg';
+import image_main_2 from '~/assets/images/wedding/image-main-2.jpg';
+import image_main_3 from '~/assets/images/wedding/image-main-3.jpg';
 import useIsInViewport from '~/hooks/useIsInViewPort';
+import './Banner.sass';
 
 function Banner({ name }) {
     const bannerRef = useRef(null);
@@ -15,10 +15,13 @@ function Banner({ name }) {
             <div ref={bannerRef}></div>
             <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true} showStatus={false}>
                 <div className="banner__image flex-center">
-                    <img src={DSC_0557_min}/>
+                    <img src={image_main_3} />
                 </div>
                 <div className="banner__image flex-center">
-                    <img src={DSC_0706_min}/>
+                    <img src={image_main_1} />
+                </div>
+                <div className="banner__image flex-center">
+                    <img src={image_main_2} />
                 </div>
             </Carousel>
             <div className={`banner__intro flex-center ${isInViewPort && 'active'}`}>
@@ -29,16 +32,7 @@ function Banner({ name }) {
                             '--delay': '0s',
                         }}
                     >
-                        Trung Hậu
-                    </div>
-                    <img src={HeartIcon} className="banner__heart"></img>
-                    <div
-                        className="banner__name girl"
-                        style={{
-                            '--delay': '1s',
-                        }}
-                    >
-                        Hồng Ngọc
+                        Gặp mặt đồng hương Ngô Khê
                     </div>
                 </div>
                 <div
@@ -47,7 +41,7 @@ function Banner({ name }) {
                         '--delay': '2s',
                     }}
                 >
-                    12/02/2023
+                    29/4/2023 - 02/05/2023
                 </div>
             </div>
         </div>

@@ -39,33 +39,6 @@ function App() {
         }
     }, [notify.requestState]);
 
-    useEffect(() => {
-        setTimeout(() => {
-            document.title = 'Nhớ đến tham dự nha';
-        }, 5000);
-        setTimeout(() => {
-            document.title = 'Trung Hậu - Hồng Ngọc';
-        }, 10000);
-    }, []);
-
-    useEffect(() => {
-        function createHeart() {
-            const heart = document.createElement('img');
-            heart.src="https://res.cloudinary.com/dzhowprbg/image/upload/v1672117186/heart_pfttiz.png";
-            heart.classList.add('heart');
-
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = Math.random() * 2 + 8 + 's';
-            document.body.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 10000);
-        }
-
-        setInterval(createHeart, 2000);
-    }, []);
-
     return (
         <ConnectedRouter history={history}>
             <Suspense fallback={<FullPageLoading />}>

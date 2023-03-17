@@ -30,12 +30,9 @@ function Albums({ name }) {
     return (
         <div name={name} className="albums flex-center">
             <img src={SecTitleFlower}></img>
-            <div className="albums__title">Album Hình Cưới</div>
-            <div className="albums__desc">
-                Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.
-            </div>
+            <div className="albums__title">Ảnh lưu niệm</div>
             <div className="albums__refresh">
-                <AppButton title="Xem thêm ảnh của chúng mình" onClick={refreshGallery}></AppButton>
+                <AppButton title="Xem thêm ảnh" onClick={refreshGallery}></AppButton>
             </div>
             <div className="gallery">
                 <Gallery photos={gallery} onClick={openLightbox} />

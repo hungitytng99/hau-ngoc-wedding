@@ -17,16 +17,13 @@ function Header(props) {
                 Giới thiệu
             </Link>
             <Link activeClass="active" className="header__item" to="wishes" spy={true} smooth={true} duration={500} offset={-70}>
-                Lời chúc
+                Thời gian
             </Link>
             <Link activeClass="active" className="header__item" to="brightgroom" spy={true} smooth={true} duration={500} offset={-70}>
-                Cặp đôi
-            </Link>
-            <Link activeClass="active" className="header__item" to="events" spy={true} smooth={true} duration={500} offset={-70}>
-                Sự kiện
+                Chương trình
             </Link>
             <Link activeClass="active" className="header__item" to="album" spy={true} smooth={true} duration={500} offset={-70}>
-                Album cưới
+                Ảnh lưu niệm
             </Link>
         </div>
     );
